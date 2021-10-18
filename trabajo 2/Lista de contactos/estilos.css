@@ -9,12 +9,25 @@ body{
     border-color: #ccc;
     border-radius: 2px;
     border-top: solid 0px;
-    margin-left: 800px;
-    margin-right: 800px;
+    display: flex;
+    flex-flow: column wrap;
+    width: 30%;
+    height: 30%;
+    margin: 0 auto;
 }
 
 .contenido{
     padding: 20px;
     border-bottom: solid 1px #eee;
-    margin-top: 10px;
+    text-align: start;
+    font-size: 50px;
+    line-height: 30%;
+    font-family: "Roboto",Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.imgRedonda{
+    width: 70px;
+    height: 70px;
+    border-radius:150px;
 }
