@@ -19,9 +19,9 @@ body{
 .contenido{
     padding: 20px;
     border-bottom: solid 1px #eee;
-    text-align: start;
+    text-align: center;
     font-size: 50px;
-    line-height: 30%;
+    line-height: 100%;
     font-family: "Roboto",Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -30,4 +30,5 @@ body{
     width: 70px;
     height: 70px;
     border-radius:150px;
+    float: left;
 }
