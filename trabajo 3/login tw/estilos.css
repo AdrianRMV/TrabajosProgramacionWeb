@@ -22,7 +22,16 @@ body {
 
 .logo {
     background-image: url(./images/fondo.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+}
 
+.pajaro {
+    width: 400px;
+    height: 300px;
 }
 
 .login {
