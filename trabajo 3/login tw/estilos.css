@@ -10,15 +10,16 @@ body {
     background-color: #eee;
 }
 
+/* Se crea las col y rows de la grilla */
 .grid {
     width: 100%;
     height: 100%;
     display: grid;
     grid-template-rows: repeat(1, [row-inicio] calc(1fr - 40px) [row-fin]) 40px;
     grid-template-columns: repeat(1, [col-inicio] 1.65fr [col-fin]) 1.35fr;
-
 }
 
+/* Fondo de background azul de Twitter*/
 .logo {
     background-image: url(./images/fondo.png);
     display: flex;
@@ -41,19 +42,14 @@ body {
 }
 
 .login {
-    padding-top: 50px;
+    padding-top: 160px;
     padding-bottom: 50px;
     padding-right: 70px;
-    padding-left: 70px;
+    padding-left: 35px;
     background-color: rgba(0, 0, 0, 1);
 }
 
-.contenido {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
-    background-color: rgb(red, green, blue);
-}
+
 
 
 .footer {
@@ -73,11 +69,24 @@ a{
 }
 
 .content-1 {
+    margin-top: 50px;
     color: white;
     font-size: 64px;
     font-family: sans-serif;
-}
+    opacity: 0.8;
+    width: 60%;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 600;
 
+}
+.content-2{
+    color: white;
+    font-size: 31px;
+    font-family: sans-serif;
+    opacity: 0.8;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
 .grupo-botones > button{
     display: block;
     background-color: white;
@@ -88,4 +97,38 @@ a{
     margin:10px ;
     width: 300px;
     text-align: center;
+    font-family: 'Google Sans',arial,sans-serif;
+    transition:  0.45s;
+    /* transition-delay: 0.1s; */
+}
+
+.grupo-botones {
+    margin-top: 25px;
+}
+
+.terminos {
+    color: grey;
+    width: 60%;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    
+}
+
+.crear-cuenta {
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.link-null {
+    color: #1D9BF0;
+    margin: 0;
+}
+
+.link-null:hover {
+    text-decoration-line: underline;
+}
+
+button:hover {
+    transform: scale(1.1,1.1);
 }
