@@ -60,6 +60,18 @@ body {
     background-color: slateblue;
 }
 
+.contenido-main {
+    box-sizing: content-box;
+    width: 100%;
+    border: solid 2px rgba(0, 0, 0, 0.4);
+    padding: 5px;
+    height: 30vh;
+    margin-top: 20px;
+    /* margin-left:60px ; */
+    
+}
+
+
 @media (min-width: 500px){ 
     .sidebar-left {
         display: inline-block;
@@ -76,9 +88,10 @@ body {
 
     .sidebar-left {
         grid-row: 1 / span 2;
-        position:sticky;
+        position:fixed;
         left: 0;
         height: 100%;
+        width: 19.5vw;
     }
 
     .header {
@@ -104,10 +117,21 @@ body {
     .sidebar-right {
         grid-column: 3 / 4;
         grid-row: 1 / span 2;
-        position:sticky;
+        position:fixed;
+        width: 23.1%;
+        top:0;
         right: 0;
         height: 100%;
+    }
+
+    .sidebar-right > * {
+        opacity: 0;
     }
 }
 
 /*  988px sale informacion en la sidebar-right*/
+@media(min-width: 988px){
+    .sidebar-right  > *{
+        opacity: 1;
+    }
+}
