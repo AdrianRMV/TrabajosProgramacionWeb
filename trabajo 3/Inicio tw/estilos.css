@@ -5,14 +5,14 @@
 }
 
 html {
-    height: 100%;
+    height: 100vh;
 }
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.2rem;
     min-height: 100%;
-    
+    background-color: black;
 }
 
 
@@ -20,13 +20,14 @@ body {
 .grid-container {
     display: grid;
     /* gap: 2px; */
+    width: 100%;
     grid-template: 
         "header" 62px
         "main"  auto
         "footer"    80px /
             1fr;
 
-    grid-auto-rows: auto;
+    /* grid-auto-rows: 10px; */
 }
 
 .header{
@@ -53,22 +54,18 @@ body {
     border:solid 1px rgba(151, 133, 133,0.9); ;
 }
 
-.footer {
+.footer{
     background-color: black;
     grid-area:footer;
     position:sticky !important; 
-    bottom: 0 ;
+    bottom: 0vh ;
     /* height: 80px; */
     color: white;
     border-top: solid 1px rgba(151, 133, 133,0.9);
     text-align: center;
-    z-index: 99;
-    position: absolute; 
-    left: 0 ; right: 0; bottom: 0; 
-    height:[footer-height]
 }
 
-.footer  > div {
+.footer  .iconos {
     display: inline;
     margin-left:40px ;
     margin-right: 40px;
@@ -76,27 +73,22 @@ body {
 
 .sidebar-left{
     display: none;
-    background-color: sandybrown;
+    background-color: black;
+    border-right: solid 3px rgba(151, 133, 133,0.9);
 }
 .sidebar-right{
     display: none;
-    background-color: slateblue;
+    background-color: black;
 }
 
-.contenido-main {
-    box-sizing: content-box;
-    width: 100%;
-    border: solid 2px rgba(0, 0, 0, 0.4);
-    padding: 5px;
-    height: 30vh;
-}
 
 .c1 {
     /* margin-top: 40px; */
+    padding: 5px;
+    box-sizing: border-box;
     width: 100%;
-    height: 100%;
+    height: 35%;
     background-color: black;
-    border-radius: 5px;
     margin-bottom: 10px;
 }
 
@@ -112,10 +104,9 @@ body {
     border-style: none;
     border-radius: 20px;
     color: rgba(255, 255, 255, 0.9);
-    background-color: royalblue;
-    left: 10px;
+    left: 1vw;
     right: 1;
-    top: 10px;
+    top: 1vh;
     background-image: url(./images/zoro.jpg);
 }
 
@@ -149,36 +140,58 @@ body {
 
 .reaction1 {
     position: absolute;
-    top:310px;
-    left: 70px;
+    top: 31%;
+    left:15vw;
     height: 25px;
 }
 .reaction2 {
     position: absolute;
-    top:310px;
-    left: 160px;
+    top: 31%;
+    left:35vw;
     height: 25px;
 }
 .reaction3 {
     position: absolute;
-    top:310px;
-    left: 250px;
+    top: 31%;
+    left:55vw;
     height: 25px;
 }
 .reaction4 {
     position: absolute;
-    top:310px;
-    left: 340px;
+    top: 31%;
+    left: 76vw;
     height: 25px;
 }
 
 .hashtags-content {
-    margin-top: 70px;
+    margin-top: 28px;
     color: #1D9BF0;
+}
+
+/* ============================ */
+/*          SIDEBAR LEFT            */
+.iconos-sidebar-left {
+    width: 30%;
+    height: 4%;
+    display: block;
+    margin-left: 35px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.tweet {
+    width: 50%;
+    height: 5%;
+    margin-left: 28%;
+    border-radius: 200%;
+    background-color: #1d9bf0;
+    border-style: none;
+    /* background-image: url(./images/pluma.png); */
 }
 
 /* =================================== */
 /*                              RESPONSIVE                          */
+/*                              PRIMER CAMBIO                   */
 @media (min-width: 500px){ 
     .sidebar-left {
         display: inline-block;
@@ -207,9 +220,16 @@ body {
         height: 62px;
     }
    
+    .elementos-sidebar-left {
+        display: none;
+    }
 }
 
 @media(min-width: 688px){
+
+    .sidebar-left{
+        width: 15.5%;
+    }
 
     .sidebar-right{
         display: inline-block;
@@ -240,6 +260,31 @@ body {
 @media(min-width: 988px){
     .sidebar-right  > *{
         opacity: 1;
+    }
+
+    .c1 {
+        padding-left: 40px;
+    }
+
+    .reaction1 , .reaction2 , .reaction2 , .reaction4 {
+        padding-left: 90px;
+    }
+
+    .busqueda {
+        width: 90%;
+        top:40px;
+        border-radius: 14px;
+        border-style: none;
+        background-color:darkgray ;
+    }
+
+    .contenido-right {
+        width: 90%;
+        border-radius: 4px;
+        margin-top: 10vh;
+        margin-left: 10px;
+        height: 30vh;
+        background-color: grey;
     }
 }
 
