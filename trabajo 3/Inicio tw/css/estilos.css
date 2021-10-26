@@ -82,7 +82,7 @@ body {
 }
 .sidebar-right{
     display: none;
-    background-color: #black;
+    background-color: black;
 }
 
 
@@ -90,7 +90,7 @@ body {
     /* margin-top: 40px; */
     padding: 5px;
     box-sizing: border-box;
-    width: 100%;
+    width: fit-content;
     height:fit-content;
     background-color: black;
     margin-bottom: 10px;
@@ -107,11 +107,8 @@ body {
     height: 40px;
     border-style: none;
     border-radius: 20px;
-    color: rgba(255, 255, 255, 0.9);
-    left: 1vw;
-    right: 1;
-    top: 1vh;
-    background-image: url(./images/zoro.jpg);
+    left:1vw;
+    top: 16%;
 }
 
 .destello {
@@ -142,30 +139,6 @@ body {
     color: rgba(255, 255, 255, 0.8);
 }
 
-.reaction1 {
-    position: absolute;
-    top: 31%;
-    left:15vw;
-    height: 25px;
-}
-.reaction2 {
-    position: absolute;
-    top: 31%;
-    left:35vw;
-    height: 25px;
-}
-.reaction3 {
-    position: absolute;
-    top: 31%;
-    left:55vw;
-    height: 25px;
-}
-.reaction4 {
-    position: absolute;
-    top: 31%;
-    left: 76vw;
-    height: 25px;
-}
 
 .hashtags-content {
     margin-top: 28px;
