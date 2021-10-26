@@ -1,0 +1,2 @@
+Fue el primero que hice, como lo hice de diferente manera al querer usar mejor un template-areas con el grid se me hizo un desmadre, mejor lo deje asi, 
+para seguirle con el de inicio y no tener que hacer de nuevo este unu
